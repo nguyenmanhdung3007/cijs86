@@ -1,12 +1,37 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.Ticket-list {
+.Content{
+  max-width: 800px;
+  padding: 64px 0 112px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.Ticket_lists {
   background-color: #fff;
   margin-top: 15px;
   list-style: none;
+}
+
+.Ticket_lists > li {
   font-size: 15px;
   padding: 11px 16px;
-  border-bottom: 2px solid #333 ;
+  border-bottom: 2px solid #333;
+}
+
+
+.Card_container {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  
 }

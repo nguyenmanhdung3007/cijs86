@@ -9,16 +9,22 @@ import IMAGES from "./components/lesson2/Images.js";
 
 function App() {
     const [openModal, setOpenModal] =useState(false)
-    const [input, setInput] = useState("")
-	
+    const [tiketQuantity, setInput] = useState("")
+    const [userGmail, setInputGmail] = useState("")
+    
 	  const handleSubmit = (event) => {
 		  event.preventDefault()
-		  console.log(input)
+		  console.log("Đã đăng ký " + tiketQuantity +", tin nhắn sẽ được gửi tới " + userGmail)
 		  setInput("")
+      setOpenModal(false)
 	  }
 
-	  const handleInputChange = (event) => {
+	  const handleInputTicketChange = (event) => {
 		  setInput(event.target.value)
+	  }
+	  
+    const handleInputGmailChange = (event) => {
+		  setInputGmail(event.target.value)
 	  }
 
   return (
@@ -78,8 +84,10 @@ function App() {
     <div>
       <Modal
        handleButton={handleSubmit}  
-       onChange={handleInputChange}
-       inValue={input}
+       onTicketChange={handleInputTicketChange}
+       onGmailChange={handleInputGmailChange}
+       inValueTicket={tiketQuantity}
+       inValueGmail={userGmail}
        open = {openModal} 
        onclose={()=> setOpenModal(false)} />
     </div>

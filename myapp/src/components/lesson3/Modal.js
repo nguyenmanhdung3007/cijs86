@@ -1,44 +1,42 @@
 import React from 'react';
 
-const Modal = () => {
+const Modal = (props) => {
+    if (!props.open) return null;
+    
     return (
         <>
-    <div className="modal">
+            <div className="modal">
         <div className="modal_container">
             <div className="modal_close">
-                <i className="ti-close"></i>
+                <button onClick={props.onclose} className='closeBtn'>X</button>
             </div>
             <header className="modal_header">
-                <i className=""></i>
                 Tickets
             </header>
 
             <div className="modal_body">
                 <label for="quantity" className="modal_label">
-                    <i className="ti-shopping-cart"></i>
                     Tickets, $15 per person
                 </label>
+                <input type="text" class="modal_input"
+                 value={props.inValue} onChange={props.onChange} placeholder="How many?"></input>
 
-                {/* <input id="quantity" type="text" className="modal-input" placeholder="How many?">
-                
                 <label for="email" className="modal-label">
-                    <i className="ti-user"></i>
                     Send To
-                </label> */}
+                </label>
+                <input type="email" class="modal_input"
+                 value={props.inValue} onChange={props.onChange} placeholder="Enter email"></input>
 
-                {/* <input id="email" type="email" className="modal-input" placeholder="Enter email">
-
-                <button id="buy-tickets">
-                    PAY <i className="ti-check"></i>
-                </button> */}
-
+                <button onClick=[{props.handleButton}] className="buy_tickets">
+                    PAY 
+                </button>
             </div>
             
             <footer className="modal_footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
             </footer>
         </div>
-    </div>
-
+            </div>
         </>
     );
 };

@@ -1,6 +1,8 @@
 .Cardticket_list {
+    width: calc(100%/3);
     padding-left: 8px;
     padding-right: 8px;
+    float: left;
 }
 
 .Cardticket_list_text {
@@ -23,11 +25,11 @@
     line-height: 1.4;
 }
 
+/* ---btn_start--- */
 .btns{
     display: flex;
     justify-content: space-between;
 }
-
 
 .btn_buy_ticket {
     text-decoration: none;
@@ -55,3 +57,93 @@
     background-color: #ccc;
     color: #333;
 }
+
+/* ---btn_end--- */
+
+
+
+/* ---modal_start--- */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal_container {
+    background: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 24px);
+}
+
+.modal_close{
+    position: absolute;
+    right: 0;
+}
+
+.closeBtn:hover,
+.modal_close:hover {
+    opacity: 0.4;
+    cursor: pointer;
+    background-color: #fff;
+    color: #f44336;
+}
+
+.closeBtn{
+    background-color: rgb(233, 100, 5);
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    padding: 16px;
+}
+
+
+.modal_header {
+    background-color: rgb(233, 100, 5);
+    font-size: 32px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.modal_body {
+    padding: 16px;
+    font-size: 15px;
+}
+
+.modal_label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.modal_input {
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 24px;
+}
+
+.buy_tickets {
+    width: 100%;
+    font-size: 15px;
+    padding: 15px;
+    background-color: rgb(233, 100, 5);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buy_tickets:hover {
+    opacity: 0.6;
+}
+
+/* ---modal_end--- */

@@ -8,9 +8,8 @@ import useModal from '../lesson3/useModal';
 const Btn = (props) => {
     return (
         <div>
-            <button className={props.class}
+            <button className={props.class} onClick={props.onOpen}
             >{props.name}</button>
-            <Modal />
         </div>
         
     );

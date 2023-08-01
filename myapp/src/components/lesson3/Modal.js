@@ -15,16 +15,16 @@ const Modal = (props) => {
             </header>
 
             <div className="modal_body">
-                <label for="quantity" className="modal_label">
+                <label for="quantity">
                     Tickets, $15 per person
                 </label>
                 <input type="text" class="modal_input"
                  value={props.inValueTicket} onChange={props.onTicketChange} placeholder="How many?"></input>
 
-                <label for="email" className="modal-label">
+                <label for="email" >
                     Send To
                 </label>
-                <input type="email" class="modal_input"
+                <input type="email"
                  value={props.inValueGmail} onChange={props.onGmailChange} placeholder="Enter email"></input>
 
                 <button onClick={props.handleButton} className="buy_tickets">

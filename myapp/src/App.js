@@ -5,7 +5,7 @@ import './App.css';
 import Modal from "./components/lesson3/Modal.js";
 import { useState } from "react";
 import IMAGES from "./components/lesson2/Images.js";
-
+import Mapping from "./components/lssson4/Mapping.js";
 
 function App() {
     const [openModal, setOpenModal] =useState(false)
@@ -26,7 +26,7 @@ function App() {
     const handleInputGmailChange = (event) => {
 		  setInputGmail(event.target.value)
 	  }
-
+    
   return (
     <>
     <div className="Content">
@@ -77,9 +77,9 @@ function App() {
     </div>
     </div>
 
-    {/* <div>
-      <button onClick={() => setOpenModal(true)}>Modal</button>
-    </div> */}
+    <div>
+      <Mapping />
+    </div>
 
     <div>
       <Modal

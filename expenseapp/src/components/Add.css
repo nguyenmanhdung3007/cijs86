@@ -1,0 +1,23 @@
+.header{
+    width: 800px;
+    height: 100px;
+    background-color: #897BDA;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 15px;
+}
+
+.add_btn{
+    justify-items: center;
+    width: 227px;
+    height: 44px;
+    background-color: #862796;
+    border-style: none;
+    color: #ffffff;
+}
+
+.add_btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }

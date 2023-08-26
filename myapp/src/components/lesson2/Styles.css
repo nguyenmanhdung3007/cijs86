@@ -5,6 +5,25 @@
     float: left;
 }
 
+.sold_out {
+    background-color: #E96405;
+    padding: 3px 4px;
+    color: #fff;
+    margin-left: 14px;
+}
+
+.quantity {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
 .Cardticket_list_text {
     background-color: #fff;
     font-size: 15px;
@@ -50,6 +69,7 @@
     display: inline-block;
     margin-top: 15px;
     border: none;
+    color: #fff;
     background-color: rgb(233, 100, 5);
 }
 

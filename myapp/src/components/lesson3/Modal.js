@@ -24,7 +24,7 @@ const Modal = (props) => {
                 <label for="email" >
                     Send To
                 </label>
-                <input type="email"
+                <input type="email" class="modal_input"
                  value={props.inValueGmail} onChange={props.onGmailChange} placeholder="Enter email"></input>
 
                 <button onClick={props.handleButton} className="buy_tickets">

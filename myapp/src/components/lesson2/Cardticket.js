@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Styles.css";
-import Btn from './Btn.js';
-import IMAGES from './Images.js';
+
 
 const Cardticket = (props) => {    
     return (

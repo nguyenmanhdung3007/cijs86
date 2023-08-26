@@ -6,11 +6,15 @@ import Modal from "./components/lesson3/Modal.js";
 import { useState } from "react";
 import IMAGES from "./components/lesson2/Images.js";
 import Mapping from "./components/lssson4/Mapping.js";
+import {tickets} from "./components/mockTickets.js"
 
 function App() {
     const [openModal, setOpenModal] =useState(false)
     const [tiketQuantity, setInput] = useState("")
     const [userGmail, setInputGmail] = useState("")
+
+    const ticketListItems = tickets.map((ticket) => (
+    <Ticketlist ticket={ticket}/>));
     
 	  const handleSubmit = (event) => {
 		  event.preventDefault()
@@ -34,9 +38,7 @@ function App() {
       <p style={{color:"white", textAlign: "center"}}>lAliquiount amet minim laborum.</p>
     <div className='Ticket_container'>
       <ul className='Ticket_lists'>
-      <Ticketlist month="September" status="Sold out"/>
-      <Ticketlist month="November" status="Sold out"/>
-      <Ticketlist month="December" status="3"/>
+      {ticketListItems}
       </ul>
     </div>
     <div className="Card_container">
